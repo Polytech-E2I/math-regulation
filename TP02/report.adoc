@@ -1,0 +1,112 @@
+= TP2 Régulation numérique
+Robin SHAMSNEJAD
+:source-highlighter: rouge
+:stem: latexmath
+:toc:
+
+== Introduction
+
+Ce TP a pour but de visualiser les caractéristiques d'une transformée en Z des
+fonctions et paramètres suivants en utilisant MATLAB. Chaque ligne n'a été faite
+que pour une seul valeur de chaque paramètre lorsque plusieurs étaient proposées.
+
+.Fonctions de transfert
+[options="header",cols="^,^,^,^"]
+|====
+| Numéro    | Procédé stem:[G_p(s)]                                                                 | Paramètres                                    | stem:[T_e]
+| 1         | stem:[\displaystyle{\frac{1}{1+T \cdot s}}]                                           | stem:[T = 10 s]                               | stem:[T_e = 0.01T]
+| 2         | stem:[\displaystyle{\frac{e^{-L \cdot s}}{1 + T \cdot s}}]                            | stem:[T = 10 s, ~ L = 2 s]                    | stem:[T_e = 0.01T]
+| 3         | stem:[\displaystyle{\frac{1}{(1 + T_1 \cdot s)(1 + T_2 \cdot s)}}]                    | stem:[T_1 = 1 s, ~ T_2 = 10 s]                | stem:[T_e = 0.01T_2]
+| 4         | stem:[\displaystyle{\frac{\omega_n^2}{\omega_n^2 + 2 \zeta \omega_n \cdot s + s^2}}]  | stem:[\omega_n = 0.05 rad/s, ~ \zeta = 0.1]   | stem:[T_e = 1 s]
+| 5         | stem:[\displaystyle{\frac{1}{(1 + T_1 \cdot s)(1 - T_2 \cdot s)}}]                    | stem:[T_1 = 1 s, ~ T_2 = 10 s]                | stem:[T_e = 0.01 T_2]
+|====
+
+== Fonction 1
+
+.Script MATLAB pour transformer en Z la fonction de transfert et en afficher les caractéristiques
+[source, matlab]
+----
+include::releves/equ1/transfoz01.m[]
+----
+[source]
+----
+include::releves/equ1/resultats.txt[]
+----
+
+image:releves/equ1/impulse.png[]
+image:releves/equ1/step.png[]
+image:releves/equ1/pzmap.png[]
+image:releves/equ1/bode.png[]
+
+== Fonction 2
+
+[source, matlab]
+----
+include::releves/equ2/transfoz02.m[]
+----
+[source]
+----
+include::releves/equ2/resultats.txt[]
+----
+
+image:releves/equ2/impulse.png[]
+image:releves/equ2/step.png[]
+image:releves/equ2/pzmap.png[]
+image:releves/equ2/bode.png[]
+
+== Fonction 3
+
+[source, matlab]
+----
+include::releves/equ3/transfoz03.m[]
+----
+[source]
+----
+include::releves/equ3/resultats.txt[]
+----
+
+image:releves/equ3/impulse.png[]
+image:releves/equ3/step.png[]
+image:releves/equ3/pzmap.png[]
+image:releves/equ3/bode.png[]
+
+== Fonction 4
+
+[source, matlab]
+----
+include::releves/equ4/transfoz04.m[]
+----
+[source]
+----
+include::releves/equ4/resultats.txt[]
+----
+
+image:releves/equ4/impulse.png[]
+image:releves/equ4/step.png[]
+image:releves/equ4/pzmap.png[]
+image:releves/equ4/bode.png[]
+
+== Fonction 5
+
+[source, matlab]
+----
+include::releves/equ5/transfoz05.m[]
+----
+[source]
+----
+include::releves/equ5/resultats.txt[]
+----
+
+image:releves/equ5/impulse.png[]
+image:releves/equ5/step.png[]
+image:releves/equ5/pzmap.png[]
+image:releves/equ5/bode.png[]
+
+== Relevés
+
+.Comparaison des caractéristiques de chaque fonction de transfert
+[options="header",cols="^,^,^,^,^,^,^,^"]
+|====
+| Numéro | Temps de montée (s) | Temps de réponse (s) | Dépassement | Période d'oscillation | Gain statique | Fréquence de coupure | Pente de coupure
+| 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1
+|====

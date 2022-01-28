@@ -1,0 +1,30 @@
+>> transfoz03
+Ts=1
+
+Gp =
+ 
+          1
+  -----------------
+  10 s^2 + 11 s + 1
+ 
+Continuous-time transfer function.
+
+
+Gzi =
+ 
+        0.05966 z
+  ----------------------
+  z^2 - 1.273 z + 0.3329
+ 
+Sample time: 1 seconds
+Discrete-time transfer function.
+
+
+Gzz =
+ 
+    0.0355 z + 0.02465
+  ----------------------
+  z^2 - 1.273 z + 0.3329
+ 
+Sample time: 1 seconds
+Discrete-time transfer function.

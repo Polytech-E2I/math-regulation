@@ -1,0 +1,29 @@
+>> transfoz05
+Te = 0.1000
+Ts=0.1
+
+Transfer function 'Gp' from input 'u1' to output ...
+
+              1
+ y1:  -----------------
+      -10 s^2 - 9 s + 1
+
+Continuous-time model.
+
+Transfer function 'Gzi' from input 'u1' to output ...
+
+           -0.009565 z
+ y1:  ----------------------
+      z^2 - 1.915 z + 0.9139
+
+Sampling time: 0.1 s
+Discrete-time model.
+
+Transfer function 'Gzz' from input 'u1' to output ...
+
+      -0.0004854 z - 0.000471
+ y1:  -----------------------
+      z^2 - 1.915 z + 0.9139
+
+Sampling time: 0.1 s
+Discrete-time model.

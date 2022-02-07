@@ -105,8 +105,18 @@ image:releves/equ5/bode.png[]
 == Relevés
 
 .Comparaison des caractéristiques de chaque fonction de transfert
-[options="header",cols="^,^,^,^,^,^,^,^"]
+[options="header",cols="^,^,^,^,^,^,^,^,^"]
 |====
-| Numéro | Temps de montée (s) | Temps de réponse (s) | Dépassement | Période d'oscillation | Gain statique | Fréquence de coupure | Pente de coupure
-| 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1
+| Numéro | Temps de montée (s) | Temps de réponse (s) | Dépassement | Période d'oscillation (s) | Gain statique (dB) | Fréquence de coupure (rad/s) | Pente de coupure (dB/décade) | Pôles / Zéros
+| 1 | 23 | 39.1 | stem:[\emptyset] | stem:[\emptyset] | 0 | 0.01 | 20 | 0.99 / stem:[\emptyset]
+| 2 | 25.1 | 41 | stem:[\emptyset] | stem:[\emptyset] | 0 | 0.01 | 20 | 0.99 / stem:[\emptyset]
+| 3 | 24.2 | 40.3 | stem:[\emptyset] | stem:[\emptyset] | 0 | 0.01 | 40 | 0.99, 0.905 / -0.964
+| 4 | 32 | 500 | 73% | 127 | 0 | 0.0772 | 40 | 0.994 + 0.0495i, 0.994 - 0.0495i / -0.997
+| 5 | stem:[\emptyset] | stem:[\emptyset] | stem:[\emptyset] | stem:[\emptyset] | 0 | 0.0986 | 20 | 1.01, 0.905 / -0.97
 |====
+
+On remarque que les 3 premières ont des caractéristiques tout à fait équivalentes, mis à part la pente de coupure, les pôles et les zéros de celles du second ordre.
+
+On remarque également que les fonctions de transfert du deuxième ordre se distinguent facilement de celles du premier ordre par leurs caractéristiques fréquentielles.
+
+Enfin, on note que la réponse indicielle a une grande importance également : en effet dans la n.5, instable, si l'on se limite à observer son diagramme de Bode, on pourrait croire qu'il s'agit d'un filtre stable du deuxième ordre, alors qu'il est évident qu'il est instable si l'on ajoute l'analyse de sa réponse temporelle ou de ses pôles.

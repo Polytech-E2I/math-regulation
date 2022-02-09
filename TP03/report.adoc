@@ -50,6 +50,7 @@ image:releves/equ2/02_stacked_steps.png[]
 image:releves/equ2/02_stacked_pzmaps.png[]
 image:releves/equ2/02_stacked_bodes.png[]
 
+NOTE: Je n'ai pas eu le temps de faire de relevés précis.
 
 
 == Fonction 3
@@ -64,6 +65,8 @@ image:releves/equ3/03_stacked_impulses.png[]
 image:releves/equ3/03_stacked_steps.png[]
 image:releves/equ3/03_stacked_pzmaps.png[]
 image:releves/equ3/03_stacked_bodes.png[]
+
+NOTE: Je n'ai pas eu le temps de faire de relevés précis.
 
 == Commentaires
 
